@@ -27,6 +27,7 @@ export const publicNavigation = [
   { href: "/competicoes", label: "Competições" },
   { href: "/blog", label: "Blog" },
   { href: "/galeria", label: "Galeria" },
+  { href: "/contato", label: "Contato" },
 ] as const;
 
 export const adminNavigation = [

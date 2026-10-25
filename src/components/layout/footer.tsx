@@ -1,7 +1,9 @@
 import Link from "next/link";
 
+import { publicContact } from "@/config/contact";
 import { publicNavigation, siteConfig } from "@/config/site";
 import { SiteLogo } from "@/components/layout/site-logo";
+import { ExternalLinkIcon } from "@/components/ui/external-link-icon";
 
 export function Footer() {
   return (
@@ -12,6 +14,10 @@ export function Footer() {
           <p className="mt-5 max-w-sm text-sm leading-6 text-acrux-muted">
             Tecnologia, engenharia, criatividade e conexão entre pessoas. Conteúdos oficiais da equipe serão publicados aqui.
           </p>
+          <Link className="mt-3 inline-flex min-h-11 max-w-full items-center rounded-lg py-2 text-base font-semibold text-acrux-cyan-bright hover:text-white" href="/contato">Fale com a Acrux <span aria-hidden="true" className="ml-2">→</span></Link>
+          <div className="flex flex-wrap gap-x-5">
+            {publicContact.socialLinks.map((social) => <a className="inline-flex min-h-11 items-center gap-2 rounded-lg py-2 text-sm font-semibold text-acrux-muted hover:text-white" href={social.href} key={social.href} rel="noopener noreferrer" target="_blank">{social.name} <ExternalLinkIcon /><span className="sr-only">(abre em nova aba)</span></a>)}
+          </div>
         </div>
 
         <div>

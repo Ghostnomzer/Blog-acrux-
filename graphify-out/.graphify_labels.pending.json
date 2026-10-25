@@ -1,5 +1,6 @@
 {
   "0": "gallery-index.tsx",
+  "1": "react",
   "2": "package.json",
   "3": "client.ts",
   "4": "deploy-pages.yml",
@@ -10,11 +11,11 @@
   "23": "hero.tsx",
   "25": "20261004031230_owner_content_notifications.sql",
   "30": "public-metadata.ts",
-  "31": "react",
+  "31": "site-logo.tsx",
   "32": "next",
-  "33": "createSupabaseBrowserClient",
-  "35": "SiteLogo",
-  "36": "gallery-manager.tsx",
+  "33": "TeamManager",
+  "35": "layout.tsx",
+  "36": "createSupabaseBrowserClient",
   "37": "getSupabasePublicConfig",
   "38": "blog-manager.tsx",
   "39": "password-recovery-form.tsx",
@@ -22,8 +23,10 @@
   "42": "sponsors-preview.tsx",
   "43": "dependencies",
   "44": "activate-account-form.tsx",
-  "45": "GalleryIndex",
+  "45": "contact-page.tsx",
   "46": "seasons-index.tsx",
   "47": "eslint.config.mjs",
-  "48": "scripts"
+  "48": "scripts",
+  "50": "gallery-manager.tsx",
+  "52": "projetos/page.tsx"
 }

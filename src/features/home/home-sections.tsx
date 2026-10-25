@@ -169,11 +169,11 @@ export function ClosingCta() {
             <div aria-hidden="true" className="absolute right-[20%] top-[38%] h-1 w-1 rounded-full bg-white shadow-[0_0_0.8rem_rgba(75,212,232,0.8)]" />
             <div className="relative">
               <p className="eyebrow justify-center">ACRUX ROBOCEP</p>
-              <h2 className="mx-auto mt-5 max-w-3xl text-3xl font-black tracking-[-0.055em] text-white sm:text-5xl">O próximo capítulo começa aqui.</h2>
-              <p className="mx-auto mt-5 max-w-xl text-base leading-7 text-acrux-muted">Acompanhe o site enquanto a equipe adiciona sua história, suas pessoas e seus projetos oficiais.</p>
+              <h2 className="mx-auto mt-5 max-w-3xl text-3xl font-black tracking-[-0.055em] text-white sm:text-5xl">Uma boa conversa pode virar um novo projeto.</h2>
+              <p className="mx-auto mt-5 max-w-xl text-base leading-7 text-acrux-muted">Quer conhecer a equipe, apresentar uma ideia ou apoiar a Acrux? Fale com a gente pelos canais oficiais.</p>
               <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
-                <ArrowLink href="/sobre" variant="primary">Conheça a ACRUX</ArrowLink>
-                <ArrowLink href="/blog" variant="secondary">Acompanhe o blog</ArrowLink>
+                <ArrowLink href="/contato" variant="primary">Fale com a Acrux</ArrowLink>
+                <ArrowLink href="/contato#apoie-a-equipe" variant="secondary">Quero apoiar a equipe</ArrowLink>
               </div>
             </div>
           </div>

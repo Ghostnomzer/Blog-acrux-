@@ -47,6 +47,12 @@ pnpm typecheck
 pnpm build
 ```
 
+## Contato e apoio
+
+A página `/contato/` reúne os canais oficiais da equipe e uma seção sobre possibilidades de apoio. Ela é acessível pelo menu, rodapé e pelos botões **Fale com a Acrux** e **Quero apoiar a equipe** na página inicial. Os canais públicos ficam centralizados em `src/config/contact.ts`; o destinatário privado das notificações não é utilizado como contato público.
+
+Somente contatos oficiais confirmados devem ser preenchidos: e-mail da equipe, número de WhatsApp com código do país (opcional) e links completos das redes sociais. Canais vazios não geram botões. Os atalhos de e-mail e WhatsApp abrem o aplicativo do visitante com uma mensagem que pode ser revisada antes do envio; o site não envia mensagens automaticamente. A conversa sobre apoio usa um assunto específico e a página aponta para a vitrine de patrocinadores existente. A nova rota entra no sitemap pela navegação pública.
+
 ## Cruzeiro do Sul na página inicial
 
 O fundo da abertura usa `src/features/home/hero-southern-cross.tsx`, com as cinco estrelas principais do Cruzeiro do Sul e os dois eixos da cruz. As posições relativas seguem a foto de referência fornecida; o destaque dourado da Acrux é uma escolha visual da marca. As estrelas surgem em sequência e as linhas são desenhadas antes de um brilho suave se repetir nos halos. A composição usa SVG, sem carregar fotografias ou bibliotecas adicionais, e se adapta ao celular para manter o texto legível. A preferência por reduzir movimentos exibe a constelação completa e estática. A imagem original da logo e sua apresentação em primeiro plano permanecem preservadas.
