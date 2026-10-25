@@ -6,6 +6,7 @@ import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+import { animateAcruxConstellation } from "@/components/animations/constellation-animation";
 import { ArrowLink } from "@/components/ui/arrow-link";
 import acruxLogo from "@/assets/acrux-logo.jpeg";
 import { HeroConstellation } from "@/features/home/hero-constellation";
@@ -15,21 +16,16 @@ export function Hero() {
   const reduceMotion = useReducedMotion();
 
   useLayoutEffect(() => {
+    const element = scope.current;
+    if (!element) return;
+
     gsap.registerPlugin(ScrollTrigger);
     const media = gsap.matchMedia();
     const context = gsap.context(() => {
       // Default markup is complete and visible, including without JavaScript.
       // matchMedia also restores it if the motion preference changes at runtime.
       media.add("(prefers-reduced-motion: no-preference)", () => {
-        scope.current?.querySelectorAll<SVGPathElement>(".acrux-constellation-line").forEach((path) => {
-          const length = path.getTotalLength();
-          gsap.set(path, { strokeDasharray: length, strokeDashoffset: length });
-        });
-
-        gsap.timeline({ defaults: { ease: "power3.out" } })
-          .fromTo(".acrux-constellation-node", { opacity: 0, scale: 0.3, transformOrigin: "50% 50%" }, { opacity: 1, scale: 1, duration: 0.35, stagger: 0.06 }, 0)
-          .to(".acrux-constellation-line", { strokeDashoffset: 0, duration: 1.05, stagger: 0.18, ease: "power2.inOut" }, 0.2)
-          .fromTo(".acrux-constellation-star", { opacity: 0, scale: 0.4, transformOrigin: "50% 50%" }, { opacity: 1, scale: 1, duration: 0.45, stagger: 0.09 }, 1.05)
+        animateAcruxConstellation(element)
           .fromTo(".hero-copy", { opacity: 0.65, y: 12 }, { opacity: 1, y: 0, duration: 0.55, stagger: 0.06 }, 0);
 
         gsap.to(".hero-orbit", {

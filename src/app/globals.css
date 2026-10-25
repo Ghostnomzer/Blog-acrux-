@@ -272,6 +272,114 @@ textarea:focus-visible {
   background: radial-gradient(ellipse at 50% 42%, rgb(9 59 120 / 35%), transparent 70%);
 }
 
+.not-found-layout {
+  display: grid;
+  align-items: center;
+  gap: 1.25rem;
+  max-width: 68rem;
+  text-align: center;
+}
+
+.not-found-logo {
+  width: clamp(7rem, 35vw, 9rem);
+  margin-inline: auto;
+  pointer-events: none;
+}
+
+.not-found-logo-track {
+  height: 0.25rem;
+  width: 70%;
+  margin: 1rem auto 0;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgb(169 195 230 / 16%);
+}
+
+.not-found-logo-fill {
+  width: 100%;
+  height: 100%;
+  transform-origin: left center;
+  background: linear-gradient(90deg, var(--acrux-cyan-bright), var(--not-found-gold));
+}
+
+.not-found-code {
+  display: block;
+  color: var(--not-found-gold);
+  font-size: clamp(3.5rem, 12vw, 8rem);
+  letter-spacing: -0.06em;
+  line-height: 1;
+}
+
+.not-found-title {
+  display: block;
+  margin-top: 0.75rem;
+  font-size: clamp(1.625rem, 4vw, 2.5rem);
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+}
+
+.not-found-description {
+  max-width: 42ch;
+  margin: 1.25rem auto 0;
+  color: var(--acrux-muted);
+  line-height: 1.65;
+}
+
+.not-found-actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 40rem) {
+  .not-found-actions {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 64rem), (min-width: 40rem) and (max-height: 30rem) {
+  .not-found-layout {
+    grid-template-columns: 1fr 1.2fr;
+    gap: clamp(2rem, 6vw, 5rem);
+    text-align: left;
+  }
+
+  .not-found-description {
+    margin-inline: 0;
+  }
+
+  .not-found-actions {
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 64rem) {
+  .not-found-logo {
+    width: min(100%, 23rem);
+  }
+}
+
+@media (min-width: 40rem) and (max-height: 30rem) {
+  .not-found-page {
+    padding-top: calc(6rem + env(safe-area-inset-top));
+    padding-bottom: 2rem;
+  }
+
+  .not-found-logo {
+    width: 9rem;
+  }
+
+  .not-found-code {
+    font-size: 3.5rem;
+  }
+
+  .not-found-title {
+    font-size: 1.625rem;
+  }
+}
+
 .not-found-home {
   background: linear-gradient(135deg, #f4dda2, var(--not-found-gold));
   box-shadow: 0 0.75rem 2rem rgb(230 197 110 / 12%);

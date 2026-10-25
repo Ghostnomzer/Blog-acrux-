@@ -51,7 +51,9 @@ pnpm build
 
 O site está disponível em https://ghostnomzer.github.io/Blog-acrux-/. O workflow de publicação configura `NEXT_PUBLIC_SITE_URL` com esse endereço e o build usa o caminho base `/Blog-acrux-`.
 
-Endereços inexistentes exibem a página personalizada de `src/app/not-found.tsx`, com a logo original, fundo azul e detalhes dourados. As ações **Voltar ao início** e **Ir para o blog** respeitam o caminho base e funcionam também sem JavaScript. O Next.js exporta `out/404.html`, servido pelo GitHub Pages com status HTTP 404, sem redirecionamento automático. A página inclui título próprio, indicação de não indexação e layout adaptado a telas pequenas.
+Endereços inexistentes exibem a página personalizada de `src/app/not-found.tsx`, com a logo original, fundo azul e detalhes dourados. A constelação se desenha com a mesma sequência de linhas, pontos e estrelas da página inicial; uma barra visual se preenche junto e a animação termina em menos de dois segundos. A sequência compartilhada está em `src/components/animations/constellation-animation.ts` e a apresentação da 404 em `src/components/animations/not-found-logo.tsx`. A imagem original da marca permanece intacta.
+
+O aviso e as ações **Voltar ao início** e **Ir para o blog** ficam disponíveis desde o início, respeitam o caminho base e funcionam também sem JavaScript. A animação é apenas visual, sem espera ou redirecionamento automático, e exibe a marca completa com `prefers-reduced-motion` ou JavaScript desativado. O Next.js exporta `out/404.html`, servido pelo GitHub Pages com status HTTP 404. A página inclui título próprio, indicação de não indexação e layout adaptado a telas pequenas.
 
 ## Supabase
 
