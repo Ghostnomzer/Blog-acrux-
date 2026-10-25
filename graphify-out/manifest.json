@@ -12,8 +12,8 @@
     "semantic_hash": ""
   },
   "next-env.d.ts": {
-    "mtime": 1792910455.1987798,
-    "seen": 1792910459.7927723,
+    "mtime": 1792913414.564969,
+    "seen": 1792913419.752816,
     "ast_hash": "827a87706fbd8f0373758c94f361454a",
     "semantic_hash": ""
   },
@@ -258,9 +258,9 @@
     "semantic_hash": ""
   },
   "src/components/layout/footer.tsx": {
-    "mtime": 1792906751.7778356,
-    "seen": 1792907203.8961766,
-    "ast_hash": "a50fdedb5f4144bbba537af2f1921c95",
+    "mtime": 1792913250.3999434,
+    "seen": 1792913419.753047,
+    "ast_hash": "149447a062a28aba9d979ad1408c2d8d",
     "semantic_hash": ""
   },
   "src/components/layout/header.tsx": {
@@ -294,9 +294,9 @@
     "semantic_hash": ""
   },
   "src/config/site.ts": {
-    "mtime": 1792906751.7784708,
-    "seen": 1792907203.896182,
-    "ast_hash": "cab5459a566bd76968fd5af0b35eaf4f",
+    "mtime": 1792912376.5613377,
+    "seen": 1792913419.753089,
+    "ast_hash": "d89366ee646875b5bc94ee6bbd4ff11c",
     "semantic_hash": ""
   },
   "src/config/sponsor-tiers.ts": {
@@ -510,9 +510,9 @@
     "semantic_hash": ""
   },
   "src/features/home/home-sections.tsx": {
-    "mtime": 1792906751.7800124,
-    "seen": 1792907203.8962922,
-    "ast_hash": "37dda00902f5ffeb043d8ace900e2406",
+    "mtime": 1792912377.1693578,
+    "seen": 1792913419.75319,
+    "ast_hash": "f723d6ec4303cf8928ff65f9426941d0",
     "semantic_hash": ""
   },
   "src/features/home/news-preview.tsx": {
@@ -522,9 +522,9 @@
     "semantic_hash": ""
   },
   "src/features/home/sponsors-preview.tsx": {
-    "mtime": 1792906751.7800124,
-    "seen": 1792907203.896294,
-    "ast_hash": "2ee0aec6f8c17c54aaebe73d84622419",
+    "mtime": 1792912417.2826512,
+    "seen": 1792913419.7531946,
+    "ast_hash": "4815c0e6cb78c991fcee3abbb0ccaa35",
     "semantic_hash": ""
   },
   "src/features/home/team-preview.tsx": {
@@ -744,9 +744,9 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1792910019.6572895,
-    "seen": 1792910459.7929924,
-    "ast_hash": "32ade76ed6e9f864b9b45208bb6854c2",
+    "mtime": 1792912418.5026906,
+    "seen": 1792913419.7533739,
+    "ast_hash": "2f80da9243bd15a635b4cb299b596f75",
     "semantic_hash": ""
   },
   "docs/audit-remediation.md": {
@@ -981,6 +981,30 @@
     "mtime": 1792910017.7972357,
     "seen": 1792910459.7928638,
     "ast_hash": "a048b502100ed320cc9b12201bc98315",
+    "semantic_hash": ""
+  },
+  "src/app/contato/page.tsx": {
+    "mtime": 1792912375.961318,
+    "seen": 1792913419.7528489,
+    "ast_hash": "03bfe74fef5ebf1d66debcd6caee2c5a",
+    "semantic_hash": ""
+  },
+  "src/components/ui/external-link-icon.tsx": {
+    "mtime": 1792913249.1919065,
+    "seen": 1792913419.7530808,
+    "ast_hash": "f20c9bdccf5117a2d53970136704812d",
+    "semantic_hash": ""
+  },
+  "src/config/contact.ts": {
+    "mtime": 1792912752.560738,
+    "seen": 1792913419.753086,
+    "ast_hash": "9dfc9554a8e6518adb89b098b18b026e",
+    "semantic_hash": ""
+  },
+  "src/features/contact/contact-page.tsx": {
+    "mtime": 1792913249.799925,
+    "seen": 1792913419.753168,
+    "ast_hash": "94f9f30960f040b702afdeec65f6b322",
     "semantic_hash": ""
   }
 }

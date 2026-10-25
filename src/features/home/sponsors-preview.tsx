@@ -41,7 +41,7 @@ export function SponsorsPreview() {
     })}</ul>;
   }
 
-  return <div className="glass-panel mt-14 rounded-3xl p-6 sm:p-8">
+  return <div className="glass-panel mt-14 rounded-3xl p-6 sm:p-8" id="patrocinadores">
     <p className="eyebrow">Patrocinadores e parceiros</p>
     <h2 className="mt-4 text-2xl font-bold tracking-[-0.04em] text-white">Quem apoia a jornada da ACRUX</h2>
     {groups.map(({ tier, items }) => <section aria-label={`Patrocinadores ${tier}`} className="mt-8" key={tier}>
