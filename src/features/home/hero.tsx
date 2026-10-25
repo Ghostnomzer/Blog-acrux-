@@ -4,12 +4,12 @@ import Image from "next/image";
 import { motion, useReducedMotion } from "motion/react";
 import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import { animateAcruxConstellation } from "@/components/animations/constellation-animation";
 import { ArrowLink } from "@/components/ui/arrow-link";
 import acruxLogo from "@/assets/acrux-logo.jpeg";
 import { HeroConstellation } from "@/features/home/hero-constellation";
+import { HeroSouthernCross } from "@/features/home/hero-southern-cross";
 
 export function Hero() {
   const scope = useRef<HTMLElement>(null);
@@ -19,7 +19,6 @@ export function Hero() {
     const element = scope.current;
     if (!element) return;
 
-    gsap.registerPlugin(ScrollTrigger);
     const media = gsap.matchMedia();
     const context = gsap.context(() => {
       // Default markup is complete and visible, including without JavaScript.
@@ -28,16 +27,6 @@ export function Hero() {
         animateAcruxConstellation(element)
           .fromTo(".hero-copy", { opacity: 0.65, y: 12 }, { opacity: 1, y: 0, duration: 0.55, stagger: 0.06 }, 0);
 
-        gsap.to(".hero-orbit", {
-          y: 40,
-          ease: "none",
-          scrollTrigger: {
-            trigger: scope.current,
-            start: "top top",
-            end: "bottom top",
-            scrub: 0.7,
-          },
-        });
       });
     }, scope);
 
@@ -55,8 +44,7 @@ export function Hero() {
     >
       <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-20 overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_43%,rgba(7,155,185,0.26),transparent_17rem),radial-gradient(circle_at_50%_5%,rgba(9,59,120,0.56),transparent_29rem),linear-gradient(180deg,#020817_0%,#061a49_70%,#020817_100%)]" />
-        <div className="hero-orbit absolute left-1/2 top-[12%] h-[31rem] w-[31rem] -translate-x-1/2 rounded-full border border-cyan-200/8 shadow-[0_0_8rem_rgba(7,155,185,0.12)] sm:h-[39rem] sm:w-[39rem]" />
-        <div className="hero-orbit absolute left-1/2 top-[16%] h-[23rem] w-[23rem] -translate-x-1/2 rounded-full border border-cyan-200/7 sm:h-[30rem] sm:w-[30rem]" />
+        <HeroSouthernCross />
       </div>
 
       <div className="shell relative z-10 grid items-center gap-6 pb-12 pt-6 text-center sm:gap-8 sm:pb-20 lg:grid-cols-2 lg:gap-16 lg:pt-12 lg:text-left">

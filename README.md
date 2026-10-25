@@ -47,6 +47,10 @@ pnpm typecheck
 pnpm build
 ```
 
+## Cruzeiro do Sul na página inicial
+
+O fundo da abertura usa `src/features/home/hero-southern-cross.tsx`, com as cinco estrelas principais do Cruzeiro do Sul e os dois eixos da cruz. As posições relativas seguem a foto de referência fornecida; o destaque dourado da Acrux é uma escolha visual da marca. As estrelas surgem em sequência e as linhas são desenhadas antes de um brilho suave se repetir nos halos. A composição usa SVG, sem carregar fotografias ou bibliotecas adicionais, e se adapta ao celular para manter o texto legível. A preferência por reduzir movimentos exibe a constelação completa e estática. A imagem original da logo e sua apresentação em primeiro plano permanecem preservadas.
+
 ## Publicação no GitHub Pages e página 404
 
 O site está disponível em https://ghostnomzer.github.io/Blog-acrux-/. O workflow de publicação configura `NEXT_PUBLIC_SITE_URL` com esse endereço e o build usa o caminho base `/Blog-acrux-`.

@@ -193,6 +193,76 @@ textarea:focus-visible {
   backdrop-filter: none;
 }
 
+.southern-cross-map {
+  position: absolute;
+  top: calc(3rem + env(safe-area-inset-top));
+  left: calc(50% - 1.5rem);
+  width: min(100%, 30rem);
+  height: auto;
+  transform: translateX(-50%);
+}
+
+.southern-cross-label {
+  display: none;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  opacity: 0.8;
+}
+
+.southern-cross-halo {
+  opacity: 0.7;
+}
+
+@media (min-width: 40rem) {
+  .southern-cross-label {
+    display: block;
+  }
+}
+
+@media (min-width: 64rem) {
+  .southern-cross-map {
+    top: 0;
+    left: calc(50% - 11rem);
+    width: min(55rem, 77vw);
+    transform: none;
+  }
+}
+
+@keyframes crux-appear {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes crux-draw {
+  from { stroke-dashoffset: 1; }
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes crux-glow {
+  0%, 100% { opacity: 0.55; }
+  50% { opacity: 0.85; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .southern-cross-star {
+    animation: crux-appear 0.9s ease-out both;
+  }
+
+  .southern-cross-line {
+    stroke-dasharray: 1;
+    animation: crux-draw 1.7s ease-in-out both;
+  }
+
+  .southern-cross-label {
+    animation: crux-appear 0.8s 2.2s ease-out both;
+  }
+
+  .southern-cross-halo {
+    animation: crux-glow 7s ease-in-out infinite both;
+  }
+}
+
 .panel-grid {
   background-image:
     linear-gradient(rgb(75 212 232 / 4%) 1px, transparent 1px),

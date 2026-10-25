@@ -1,7 +1,5 @@
 {
   "1": "team-index.tsx",
-  "2": "package.json",
-  "5": "robots-manager.tsx",
   "6": "publicPageMetadata",
   "7": "projects-manager.tsx",
   "8": "admin-users/index.ts",
@@ -12,7 +10,6 @@
   "13": "next-env.d.ts",
   "14": "postcss.config.mjs",
   "15": "AGENTS.md",
-  "16": "competitions-manager.tsx",
   "18": "blog-index.tsx",
   "19": "about-manager.tsx",
   "21": "20260904000000_initial_acrux_schema.sql",
@@ -22,7 +19,6 @@
   "27": "functions/README.md",
   "28": "style-graph.ps1",
   "29": "update-graph.ps1",
-  "31": "Correções da auditoria de 2 de outubro de 2026",
   "34": "ArrowLink",
   "40": "team-manager.tsx",
   "49": "20260909055046_harden_editor_post_trigger.sql",
