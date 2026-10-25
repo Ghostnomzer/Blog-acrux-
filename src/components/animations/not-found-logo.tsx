@@ -21,8 +21,9 @@ export function NotFoundLogo() {
       media.add("(prefers-reduced-motion: no-preference)", () => {
         const timeline = animateAcruxConstellation(element);
         timeline
-          .fromTo(".not-found-logo-fill", { scaleX: 0 }, { scaleX: 1, duration: timeline.duration(), ease: "none" }, 0)
-          .fromTo(".not-found-logo-image", { opacity: 0.4, scale: 0.96 }, { opacity: 1, scale: 1, duration: 0.45 }, 1.05);
+          .fromTo(".not-found-logo-image", { opacity: 0.4, scale: 0.96 }, { opacity: 1, scale: 1, duration: 0.45 }, 1.05)
+          .repeat(-1)
+          .repeatDelay(0.65);
       });
     }, element);
 
@@ -45,9 +46,6 @@ export function NotFoundLogo() {
           src={acruxLogo}
           width={80}
         />
-      </div>
-      <div className="not-found-logo-track">
-        <div className="not-found-logo-fill" />
       </div>
     </div>
   );
